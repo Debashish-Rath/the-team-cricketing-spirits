@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Team-Cricketing-Spirit
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="static/css/dashboard.css" />
+{% endblock %}
+
+{% block body %}
+
+<div class="dashboard-container">
+
+    <div class="dashboard-header">
+        <h1>Welcome to the World of Team Cricketing Spirits</h1>
+    </div>
+    
+    <div class="intro-container">
+        <div class="poster-section">
+            <img src="/static/images/team-group-pic.jpg" class="mySlides" alt="group-pic" />
+            <img src="/static/images/poster.jpg" class="poster-img mySlides" alt="banner" />
+        </div>
+        <div class="thanks-note">
+            <h1>Special thanks to: <span>Jyoti Bhai ,</span><span>Sarthak Bhai ,</span><span>Chandan Bhai
+                    ,</span><span>Anu</span></h1>
+        </div>
+    </div>
+
+    <div class="sponsor-section">
+        <h1>Our Sponsors</h1>
+        <p><span>J.J.Sports, Ambagan</span><br><span>Cnet, Koel Nagar</span><br><span>Kulhad Chai Wala</span></p>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) { slideIndex = 1 }
+        x[slideIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+{% endblock %}

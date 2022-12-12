@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat:ital,wght@0,400;0,700;1,800&family=Poppins:wght@400;500;700;900&family=Roboto:ital,wght@0,500;0,700;0,900;1,400;1,900&display=swap');
+
+body {
+    /* background: linear-gradient(270deg, #51E1ED 0%, #12B0E8 30%, #1beef5 40%); */
+    height: 100vh;
+    background-color: #242B2E;
+}
+
+.dashboard-container {
+    height: auto;
+    /* background-color: #f40b0b; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px 3vw 0 3vw;
+}
+
+.dashboard-header > h1 {
+    color: #00D84A;
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid #E21717;
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: #242B2E; */
+    background-color: #031d28;
+    /* background-color: #0f0328; */
+    /* background-color: #31005f; */
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.intro-container {
+    display: flex;
+    /* background-color: #370cf6; */
+    background-color: #000000;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+    border-radius: 15px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.intro-container img {
+    border: 3px solid #ffffff;
+    border-radius: 12px;
+}
+
+.poster-section {
+    height: auto;
+}
+
+.poster-section img {
+    height: auto;
+    max-width: 100%;
+}
+
+.thanks-note > h1 {
+    color: #0ce722; 
+    text-align: center;
+}
+
+.thanks-note span {
+    color: #F7CD2E;
+    font-family:'Montserrat', 'Sans-serif';
+}
+
+.sponsor-section {
+    background-color: #000000;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.sponsor-section h1 {
+    font-size: 80px;
+    color: #F7CD2E;
+    text-align: center;
+    padding: 30px;
+}
+
+.sponsor-section p {
+    text-align: center;
+}
+
+.sponsor-section span {
+    color: #0ce722;
+    font-size: 35px;
+    text-decoration: wavy;
+}
+
+@media screen and (max-width: 1166px) {
+
+    /* .dashboard-container > h1 {
+        margin-bottom: -30px;
+    } */
+
+}
+
+@media screen and (max-width: 1032px) {
+    .intro-container > h1 {
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,32 @@
+.navbar-brand img {
+    width: 200px;
+    padding: 0 0 0 60px;
+}
+
+nav {
+    overflow: hidden;
+}
+
+.navbar-nav {
+    width: 100%;
+    margin-left: 111px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.nav-link {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link:hover {
+    background-color: rgb(241, 11, 11);
+    color: blue;
+}
+
+.nav-menu-item {
+    color: blue;
+}
+
