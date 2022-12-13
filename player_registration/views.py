@@ -10,7 +10,7 @@ def player_register(request):
         name = request.POST['name']
         phone_no = request.POST['phone_no']
         whatsapp_no = request.POST['whatsapp_no']
-        role_info = request.POST['role_info']
+        role_info = request.POST.get('role_info','')
         reference_person = request.POST['reference_person']
         is_available = request.POST['availability']
 
