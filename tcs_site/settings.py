@@ -16,9 +16,8 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(os.path.join(BASE_DIR, ".env"))
-if load_dotenv:
-    SECRET_KEY = os.environ['SECRET_KEY']
-    print("SECRET_KEY: ", SECRET_KEY)
+SECRET_KEY = os.getenv("SECRET_KEY")
+print("SECRET_KEY: ", SECRET_KEY)
 
 
 # Quick-start development settings - unsuitable for production
