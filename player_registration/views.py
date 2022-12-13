@@ -10,11 +10,12 @@ def player_register(request):
         name = request.POST['name']
         phone_no = request.POST['phone_no']
         whatsapp_no = request.POST['whatsapp_no']
+        role_info = request.POST['role_info']
         reference_person = request.POST['reference_person']
         is_available = request.POST['availability']
 
         
-        Player_Registration_Form.objects.create(name=name, phone_no=phone_no,whatsapp_no=whatsapp_no,role='LHB',reference_person=reference_person,is_available=True)
+        Player_Registration_Form.objects.create(name=name, phone_no=phone_no,whatsapp_no=whatsapp_no,role=role_info,reference_person=reference_person,is_available=True)
 
         # print(player_registeration_form)
         print(name)
