@@ -16,9 +16,10 @@ from dotenv import load_dotenv
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-load_dotenv(os.path.join(BASE_DIR, ".env"))
+load_dotenv(os.path.join(BASE_DIR, '.env'))
 # SECRET_KEY = config('SECRET_KEY')
 SECRET_KEY = os.getenv("SECRET_KEY")
+print(load_dotenv(os.path.join(BASE_DIR, '.env')))
 print("SECRET_KEY: ", SECRET_KEY)
 
 
