@@ -10,20 +10,21 @@
 <div class="form-main-container">
     <div class="form-data-container">
         <div class="form-data">
-            <form action="/player-registration">
+            <form action="/player-registration" method="post">
+                {% csrf_token %}
                 <div class="form-headers">
                     <label for="name">Name</label>
                     <input class="form-input-field" type="text" name="name" id="name" required>
                 </div>
 
                 <div class="form-headers">
-                    <label for="phone_no." name="Phone Number">Your Phone No.</label>
-                    <input class="form-input-field" type="number" name="name" id="name" required>
+                    <label for="phone_no." name="phone_no">Your Phone No.</label>
+                    <input class="form-input-field" type="number" name="phone_no" id="name" required>
                 </div>
 
                 <div class="form-headers">
-                    <label for="whatsapp_no." name="Phone Number">Your Whatsapp No.</label>
-                    <input class="form-input-field" type="number" name="name" id="name" required>
+                    <label for="whatsapp_no." name="whatsapp_no">Your Whatsapp No.</label>
+                    <input class="form-input-field" type="number" name="whatsapp_no" id="name" required>
                 </div>
 
                 <!-- <div class="form-headers">
@@ -67,8 +68,8 @@
                 </div> -->
 
                 <div class="form-headers">
-                    <label for="whatsapp_no." name="Phone Number">How did you get to know about this league ?</label>
-                    <input class="form-input-field" type="text" name="name" id="name" required>
+                    <label for="whatsapp_no." name="reference_person">How did you get to know about this league ?</label>
+                    <input class="form-input-field" type="text" name="reference_person" id="name" required>
                 </div>
 
                 <div class="form-headers">
