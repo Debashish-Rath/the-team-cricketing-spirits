@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from player_registration.models import Player_Registration_Form
 
@@ -6,11 +6,12 @@ from player_registration.models import Player_Registration_Form
 
 
 def player_register(request):
+    is_registered = False
     if request.method == 'POST':
         name = request.POST['name']
         phone_no = request.POST['phone_no']
         whatsapp_no = request.POST['whatsapp_no']
-        role_info = request.POST.get('role_info','')
+        role_info = request.POST.get('role_info','RHB')
         reference_person = request.POST['reference_person']
         is_available = request.POST['availability']
 
@@ -23,6 +24,11 @@ def player_register(request):
         print(whatsapp_no)
         print(reference_person)
         print(is_available)
-        return HttpResponse("Successfully Registered")
+        is_registered = True
+        return redirect('/registration-success')
+        
     else:
         return render(request, 'register.html')
+
+def registration_success(request):
+    return render(request, 'register_success.html')

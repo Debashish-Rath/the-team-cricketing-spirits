@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Player Registration - Success
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="static/css/register_success.css" />
+{% endblock %}
+
+{% block body %}
+<div class="team-name-header">
+    <div>
+        <h1>Congrats !!! You have registered successfully</h1>
+    </div>
+</div>
+
+<div class="success-page-container">
+    <div class="thank-you-container">
+        <div class="thank-you-info">
+            <h1>Thank You for Registering in Team Cricketing Spirits Platform</h1>
+        </div>
+        <div class="important-buttons">
+            <div class="home-button">
+                <!-- <button><a href="/">Home</a></button> -->
+                <a href="/"><button>Home</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
